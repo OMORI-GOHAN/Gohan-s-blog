@@ -38,8 +38,18 @@ jobs:
         with:
           enablement: true
 
-      # `pnpm build` runs `astro check && astro build`, then the
-      # `postbuild` script runs pagefind over dist/.
+      - name: Debug i18n config
+        run: |
+          echo "=== index.astro ==="
+          cat src/pages/index.astro
+          echo "=== i18n config ==="
+          sed -n '1,130p' src/i18n/config.ts
+          echo "=== git commit ==="
+          git rev-parse HEAD
+
+  # `pnpm build` runs `astro check && astro build`, then the
+  # `postbuild` script runs pagefind over dist/.
+
       - run: pnpm build --site "${{ steps.pages.outputs.origin }}" --base "${{ steps.pages.outputs.base_path }}"
       - uses: actions/upload-pages-artifact@v5
         with:
