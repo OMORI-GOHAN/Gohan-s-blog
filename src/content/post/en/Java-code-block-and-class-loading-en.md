@@ -199,4 +199,3 @@ Finally, remember:
 
 > A static initialization block can only directly access static members, while an instance initialization block can access both static and instance members.
 
-![Java initialization order](../_assets/code-block.png)
