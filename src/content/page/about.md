@@ -1,14 +1,13 @@
 ---
 title: About
-description: A short introduction. Replace this in src/content/page/about.md.
+description: About Gohan and this blog.
 ---
 
-This is the About page. It's a markdown file at `src/content/page/about.md` — edit it freely. The shape is intentionally unstructured so you can write a paragraph, a list, a CV, or whatever fits.
+Hi, I'm Gohan, a computer science student.
 
-A few example bullets to get going:
+This blog is where I write about programming, computer science, projects, and things I find interesting.
 
-- 👋 One-line intro — what you do, where, since when.
-- 🛠 The tools you reach for first.
-- 📝 What you tend to write about here.
+My main interests include Rust, C++, Java, algorithms, open source, and building things.
 
-Find me on [GitHub](https://github.com/example), [Twitter / X](https://x.com/example), or by [email](mailto:john@example.com).
+
+Find me on [GitHub](https://github.com/OMORI-GOHAN) or by [email](Gohan_taberu@proton.me).

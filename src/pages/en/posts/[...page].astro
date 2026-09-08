@@ -4,11 +4,11 @@ import { getPostsForLocale, sortMDByDate } from "@/data/post";
 import type { GetStaticPaths } from "astro";
 
 export const getStaticPaths = (async ({ paginate }) => {
-	const posts = sortMDByDate(await getPostsForLocale("zh"));
+	const posts = sortMDByDate(await getPostsForLocale("en"));
 	return paginate(posts, { pageSize: 20 });
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
 ---
 
-<PostArchivePage locale="zh" page={page} />
+<PostArchivePage locale="en" page={page} />
