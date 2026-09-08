@@ -42,8 +42,7 @@ jobs:
       # `postbuild` script runs pagefind over dist/.
       - run: pnpm build
         env:
-          BASE_PATH: ${{ steps.pages.outputs.base_path }}
-
+          BASE_PATH: /Gohan-s-blog
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
